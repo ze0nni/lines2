@@ -1,0 +1,41 @@
+[project]
+title = Lines
+dependencies = 
+
+[bootstrap]
+main_collection = /meta/MetaScreen.collectionc
+
+[input]
+game_binding = /game.input_bindingc
+use_accelerometer = 0
+
+[display]
+width = 750
+height = 1334
+high_dpi = 1
+fullscreen = 0
+
+[ios]
+app_icon_57x57 = /assets/app_icons/icon_57.png
+app_icon_114x114 = /assets/app_icons/icon_114.png
+app_icon_72x72 = /assets/app_icons/icon_72.png
+app_icon_144x144 = /assets/app_icons/icon_144.png
+
+[osx]
+bundle_identifier = com.example.todo
+
+[android]
+input_method = HiddenInputField
+
+[script]
+shared_state = 1
+
+[physics]
+gravity_y = -1000.0
+scale = 0.01
+
+[html5]
+show_console_banner = 0
+show_fullscreen_button = 0
+show_made_with_defold = 0
+

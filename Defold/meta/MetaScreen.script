@@ -1,0 +1,17 @@
+local co = require "co"
+
+function init(self)
+	self.juggler = co.juggler();
+	self.juggler:co(function()
+		coroutine.yield()
+		self.juggler:load_collection_proxy("Zone:0001", msg.url("/zone#zone_0001_rio"))
+	end)
+end
+
+function update(self, dt)
+	self.juggler:update()
+end
+
+function on_message(self, message_id, message, sender)
+	self.juggler:on_message(message_id, message, sender)
+end
